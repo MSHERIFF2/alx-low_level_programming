@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char sentece[] = "\"Programming is like building a multilingual puzzle\"";
+	char sentece[] ="\"Programming is like building a multilingual puzzle\"";
 
 	puts(sentece);
 	fputs("", stderr);
