@@ -1,9 +1,7 @@
 #include <stdio.h>
 /**
  * main - hello func
- *
- * Description: print hello
- * Return: always zero
+ *Return: 0
  */
 int main(void)
 {
