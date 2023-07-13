@@ -12,6 +12,6 @@ int main(void)
 	char sentece[] = "\"Programming is like building a multilingual puzzle\"\n";
 
 	puts(sentece);
-	fputs("Anything\n", stderr);
+	fputs("\n", stderr);
 	return (0);
 }
