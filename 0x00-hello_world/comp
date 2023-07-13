@@ -1,0 +1,2 @@
+#!/bin/bash
+alias comp="-Wall -Werror -Wextra -pedantic -std=gnu89"
