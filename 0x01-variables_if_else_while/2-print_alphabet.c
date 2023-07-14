@@ -1,8 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
 #include <stdio.h>
-/* betty style doc for function main goes there */
 
 /**
  * main - random number
@@ -15,6 +11,6 @@ int main(void)
 
 	for (letter = 'a'; 'a' <= 'z'; letter++)
 		putchar(letter);
-	puts("\n");
+	puts("");
 	return (0);
 }
