@@ -11,8 +11,10 @@
  */
 int main(void)
 {
-	for (char letter = 'a'; 'a' <= 'z'; letter++)
-		fputs("%c", letter);
+	char letter;
+
+	for (letter = 'a'; 'a' <= 'z'; letter++)
+		putchar(letter);
 	puts("\n");
 	return (0);
 }
