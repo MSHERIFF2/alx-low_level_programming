@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * main - alphabet
+ * print_alphabet - alphabet
  *
+ * Description: print alphabet game
  * Return: 0
  */
 void print_alphabet(void)
