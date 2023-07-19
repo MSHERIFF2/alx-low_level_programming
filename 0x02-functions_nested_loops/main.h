@@ -11,3 +11,7 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
+<<<<<<< HEAD
+=======
+
+>>>>>>> aeddb19728e83782c5043cda6dbe1449242848fb
