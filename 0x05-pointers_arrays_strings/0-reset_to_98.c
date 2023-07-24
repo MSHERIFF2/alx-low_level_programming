@@ -7,12 +7,8 @@
  * Return: 0
  */
 
-int main(void)
+void reset_to_98(int *n)
 {
-	int m = 98;
-	
-	_putchar("m=%d\n", m);
-	reset_to_98(&m);
-	_putchar("%d\n", m);
-	return (0);
+	int m;
+	n = &m;
 }
