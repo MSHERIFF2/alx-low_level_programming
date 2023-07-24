@@ -2,17 +2,17 @@
 #include <stdio.h>
 
 /**
- * main - reset pinter value
+ * main - reset pointer value
  *
  * Return: 0
  */
 
 int main(void)
 {
-	int m = 98;
+	int n = 402;
 
-	_putchar('(char *)m');
-	reset_to_98(&m);
-	_putchar('(char *)m');
+	printf("n=%d\n", n);
+	reset_to_98(&n);
+	printf("n=%d\n", n);
 	return (0);
 }
