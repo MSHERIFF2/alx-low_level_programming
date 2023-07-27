@@ -1,28 +1,32 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * _strcat - concatenate two strings
- * @dest: first string
- * @src: second place holder for string
- *
- * Return: always 0
+ * *_strcat - function commute srtings
+ * @dest: param pointer to a char
+ * @src: param pointer to a char
+ * Return: return value of dest
  */
+
 char *_strcat(char *dest, char *src)
 {
-	int l1;
-	int l2;
+	int i;
+	int j;
 
-	l1 = 0;
-	l2 = 0;
-	while (*(dest + l1) != '\0')
-		l1++;
-	while (*(src + l2) != '\0' &&  l1 < 97)
+	i = 0;
+	j = 0;
+
+	while (dest[i] != '\0')
 	{
-		*(dest + l1) = *(src + l2);
-		l1++;
-		l2++;
+		i++;
 	}
-	*(dest + l1) = '\0';
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+	}
+
+	dest[i] = '\0';
 	return (dest);
 }
