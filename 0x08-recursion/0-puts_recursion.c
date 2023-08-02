@@ -10,6 +10,6 @@ void _puts_recursion(char *s)
 {
 	if (*s != '\0')
 	{
-		puts(_puts_recursion(s));
+		puts((void *)_puts_recursion(s));
 	}
 }
