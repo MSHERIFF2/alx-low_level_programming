@@ -3,7 +3,7 @@
 
 /**
  * factorial - function that returns the factorial of a given number
- * @s: the pointer to the string
+ * @n: the variable to the number
  * Return:0
  */
 int factorial(int n)
