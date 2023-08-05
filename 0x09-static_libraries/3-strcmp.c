@@ -1,19 +1,22 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * _puts - print a text to stdout
- *
- * @str: store the length of string
- * Return: return the length
+ * _strcmp - This is my function
+ * @s1: This is my entry
+ * @s2: This is my entry again
+ * Return: This is my result
  */
 
-void _puts(char *str)
+int _strcmp(char *s1, char *s2)
 {
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
+	for (; (*s1 != '\0' && *s2 != '\0') && *s1 == *s2; s1++, s2++)
 	{
-		_putchar(str[i]);
 	}
-	_putchar('\n');
+	if (*s1 == *s2)
+	{
+		return (0);
+	}
+	else
+	{
+		return (*s1 - *s2);
+	}
 }
