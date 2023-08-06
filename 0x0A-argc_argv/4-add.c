@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 			char *btr;
 
 			btr = argv[i];
-			for ( c = 0; btr[c] != '\0'; c++)
+			for (c = 0; btr[c] != '\0'; c++)
 			{
 				if (btr[c] < 48 || btr[c] > 57)
 				{
