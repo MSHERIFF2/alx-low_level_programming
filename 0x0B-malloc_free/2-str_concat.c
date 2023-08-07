@@ -23,7 +23,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = " ";
 	}
-	concatinate = malloc(lent1 + lent2 + 1);
+	if (concatinate == '\0')
+	{
+		return (NULL);
+	}
+	concatinate = (char *)malloc(lent1 + lent2 + 1);
 	if (concatinate == NULL)
 	{
 		return (NULL);
