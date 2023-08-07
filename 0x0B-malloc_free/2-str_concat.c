@@ -18,7 +18,11 @@ char *str_concat(char *s1, char *s2)
 	concatinate = malloc(lent1 + lent2 + 1);
 	if (concatinate == NULL)
 	{
-		return (" ");
+		return (NULL);
+	}
+	if ( s1 == NULL || s2 == NULL)
+	{
+		return ("");
 	}
 	strcpy(concatinate, s1);
 	strcat(concatinate, s2);
