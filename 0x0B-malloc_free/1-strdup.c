@@ -16,12 +16,12 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	allocate = malloc(sizeof(str));
-	return (allocate);
-	if (str > allocate)
+	allocate = malloc(sizeof(strlen(str) + 1);
+	if (allocate == NULL)
 	{
 		return (NULL);
 	}
-	return (0);
+	strcpy(allocate, str);
+	return (allocate);
 }
 
