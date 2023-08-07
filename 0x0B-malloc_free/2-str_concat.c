@@ -20,9 +20,13 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	if ( s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return ("");
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 	strcpy(concatinate, s1);
 	strcat(concatinate, s2);
