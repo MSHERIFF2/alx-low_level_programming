@@ -11,9 +11,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *concatinate;
-	size_t lent1 = strlen(s1);
-	size_t lent2 = strlen(s2);
+	int a, b;
+	char *c;
 
 	if (s1 == NULL)
 	{
@@ -23,12 +22,25 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	concatinate = (char *)malloc(lent1 + lent2 + 1);
-	if (concatinate == NULL)
+	for (a = 0; s1[a] != '\0'; a++)
+	{
+	}
+	for (b = 0; s2[b] != '0\'; b++)
+	{
+	}
+	c = (char *)malloc(((a + b) + 1) * sizeof(char));
+	if (c == NULL)
 	{
 		return (NULL);
 	}
-	strcpy(concatinate, s1);
-	strcat(concatinate, s2);
-	return (concatinate);
+	for (a = 0; s1[a] != '\0'; a++)
+	{
+		c[a] = s1[a];
+	}
+	for (b = 0; s2[b] != '\0'; b++)
+	{
+		c[a] = s2[b];
+		a++;
+	}
+	return (c);
 }
