@@ -1,10 +1,10 @@
-#include "main.h" 
+#include "main.h"
 #include <stdlib.h>
 #include <string.h>
 
 /**
  * argstostr - function that concatenates all the arguments
- * @ac: variable 
+ * @ac: variable
  * @av: pointer
  * Return: pointer
  */
@@ -25,13 +25,12 @@ char *argstostr(int ac, char **av)
 		total_length += strlen(av[i]) + 1;
 	}
 	concatenated = (char *)malloc(total_length * sizeof(char));
-	
+
 	if (concatenated == NULL)
 	{
 		return (NULL);
 	}
 	position = 0;
-	
 	for (i = 0; i < ac; i++)
 	{
 		strcpy(concatenated + position, av[i]);
@@ -39,6 +38,6 @@ char *argstostr(int ac, char **av)
 		concatenated[position] = '\n';
 		position++;
 	}
-	return concatenated;
+	return (concatenated);
 }
 
