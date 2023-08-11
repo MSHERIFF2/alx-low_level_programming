@@ -1,39 +1,39 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * _realloc - function that reallocates a memory block using malloc
- * and free
- * @ptr: pointer
- * @old_size: formal size
- * @new_size: new size
- *
- * Return: pointer
+ * _realloc - Main Entry
+ * @ptr: input
+ * @old_size: input
+ * @new_size: input
+ * Return: 0
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *new_ptr;
-	unsigned int copy_size;
+	char *p;
+	unsigned int i, max = new_size;
+	char *oldp = ptr;
 
-	if (new_size == 0)
+	if (ptr == NULL)
+	{
+		p = malloc(new_size);
+		return (p);
+	}
+	else if (new_size == 0)
 	{
 		free(ptr);
 		return (NULL);
 	}
-	if (ptr == NULL)
-	{
-		void *cond;
-		cond = malloc(new_size);
-		return (cond);
-	}
-	if (new_size == old_size)
+	else if (new_size == old_size)
 		return (ptr);
-	copy_size = (olde_size < new_size) ? old_size : new_size;
-	new_ptr = malloc(new_size);
-	if (new_ptr == NULL)
+
+	p = malloc(new_size);
+	if (p == NULL)
 		return (NULL);
-	memcpy(new_ptr, ptr, copy_size;
+	if (new_size > old_size)
+		max = old_size;
+	for (i = 0; i < max; i++)
+		p[i] = oldp[i];
 	free(ptr);
-	return (new_ptr);
+	return (p);
 }
