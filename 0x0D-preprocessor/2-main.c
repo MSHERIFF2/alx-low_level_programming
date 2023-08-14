@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "./main.h"
 
 /**
  * main - file compiled from
@@ -8,6 +7,6 @@
  */
 int main(void)
 {
-	_putchar(__FILE__);
+	printf(__FILE__);
 	return (0);
 }
