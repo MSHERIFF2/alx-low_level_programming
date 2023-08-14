@@ -8,7 +8,6 @@
  */
 int main(void)
 {
-	char a = __FILE__;
-	_putchar(a);
+	_putchar(__FILE__);
 	return (0);
 }
