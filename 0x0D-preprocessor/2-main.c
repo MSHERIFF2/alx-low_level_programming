@@ -1,8 +1,5 @@
 #include <stdio.h>
-#ifndef MAIN_H
-#define MAIN_H
-char _putchar(char c);
-#endif
+#include "./main.h"
 
 /**
  * main - file compiled from
