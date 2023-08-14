@@ -1,5 +1,6 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
-#define SIZE 1024
+
+#define ABS(X) ((X < 0) ? -(X) : (X))
 
 #endif
