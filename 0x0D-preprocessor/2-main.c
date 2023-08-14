@@ -1,4 +1,8 @@
 #include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
+char _putchar(char c);
+#endif
 
 /**
  * main - file compiled from
@@ -7,6 +11,7 @@
  */
 int main(void)
 {
-	printf(__FILE__);
+	char a = __FILE__;
+	_putchar(a);
 	return (0);
 }
