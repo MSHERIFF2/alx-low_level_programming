@@ -7,6 +7,7 @@
  */
 int main(void)
 {
-	printf("\n",  __FILE__);
+	printf(__FILE__);
+	printf("\n");
 	return (0);
 }
