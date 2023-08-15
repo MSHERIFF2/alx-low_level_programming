@@ -20,7 +20,7 @@ void print_dog(struct dog *d)
 	}
 	if ((*d).age == 0.0)
 	{
-		(*d).age = 0.0 ;
+		(*d).age = 0.0;
 	}
 	if ((*d).owner == NULL)
 	{
