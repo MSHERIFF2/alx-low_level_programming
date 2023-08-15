@@ -3,7 +3,7 @@
 #include "dog.h"
 
 /**
- * init_dog - function that initialize a 
+ * init_dog - function that initialize a
  * variable of type struct dog
  * @d: point to type dog
  * @name: pointer to name of the dog
