@@ -9,20 +9,17 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list sum;
-	int i;
-
-	va_start(sum, n);
 	if (n == 0)
 		return (0);
-	for (i = n; i >= 0; i = va_arg(sum, unsigned int))
-	{
-		int sum = 0;
+	va_list args;
+	int i, total_sum = 0;
 
-		sum += i;
-		printf("%d\n", sum);
+	va_start(args, n);
+	for (i = 0; i < n; i++)
+	{
+		int num = va_ard(args, int);
+		total_sum += num;
 	}
-	va_end(sum);
-	printf("\n");
-	return (0);
+	va_end(args);
+	return (total_sum);
 }
