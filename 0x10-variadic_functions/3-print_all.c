@@ -11,15 +11,14 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	
-	va_start(args, format);
 	char c;
 	int i;
 	float f;
 	char *s;
 	int idx = 0;
 	int null_count = 0;
-
+	
+	va_start(args, format);
 	while (format[idx] != '\0')
 	{
 		if (format[idx] == 'c')
@@ -30,7 +29,7 @@ void print_all(const char * const format, ...)
 		else if (format[idx] == 'i')
 		{
 			i = va_arg(args, int);
-			prinft("%d", i);
+			printf("%d", i);
 		}
 		else if (format[idx] == 'f')
 		{
@@ -52,5 +51,6 @@ void print_all(const char * const format, ...)
 		}
 		idx++;
 	}
-	va_end(args);
 	printf("\n");
+	va_end(args);
+}
