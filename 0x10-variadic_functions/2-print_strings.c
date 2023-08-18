@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - variadic function that print numbers
+ * print_strings - variadic function that print strings
  * @separator: pointer to a character
  * @n: pointer to an unsigned integer
  *
