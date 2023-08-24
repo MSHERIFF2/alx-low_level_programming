@@ -1,12 +1,18 @@
 #include <stdio.h>
 
-/**
- * main - function that print hello holberton
- *
- * Return: 0
- */
 int main(void)
 {
-	printf("Hello, Holberton\n");
+	asm
+		(
+			"mov $4, %%rax;"
+			"mov $1, %%rdi;"
+			"mov %[message], %%rsi;"
+			"mov $14, %%rdx;"
+			"syscall;"
+			:
+			:[message] "m" ("Hello Holberton\n")
+			: "rax", "rdi", "rsi", "rdx"
+		);
 	return (0);
 }
+
