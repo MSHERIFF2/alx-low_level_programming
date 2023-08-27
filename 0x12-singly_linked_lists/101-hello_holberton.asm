@@ -1,19 +1,21 @@
 section .data
-	hello db "Hello, Holberton", 0
-	format db "%s", 10, 0
+	hello : db "Hello, Holberton", 10
+	helloLen:  equ $-hello
+
 section .text
 	global main
-extern printf
+	extern printf
 
 main:
-	push rbp
-	mov rdi, format
-	lea rsi, [hello]
-	call printf
-	pop rbp
-mov rax, 60
-xor rdi, rdi
-syscall
+	mov	rax,1
+	mov	rdi,1
+	mov	rsi,hello
+	mov	rdx,helloLen
+	syscall
+	
+	mov	rax,60
+	mov	rdi,0
+	syscall
 
 section .data
 	extern printf
