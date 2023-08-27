@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * Apply the constructor attribute to beforemain()
- * so that it is executed before main()
+ * startbefore_main - declaring function before main
  */
 void startbefore_main(void) __attribute__ ((constructor));
 /**
