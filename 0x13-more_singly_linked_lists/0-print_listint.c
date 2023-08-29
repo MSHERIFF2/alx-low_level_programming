@@ -3,7 +3,7 @@
 /**
  * print_listint - function that prints all the element of
  * a listiint_t list
- * @h: pointer to listint_t
+ * @h:pointer to listint_t
  *
  * Return: number of nodes
  */
@@ -11,11 +11,6 @@ size_t print_listint(const listint_t *h)
 {
 	unsigned int count = 0;
 
-	if (h == NULL)
-	{
-		printf("Error\n");
-		return (NULL);
-	}
 	while (h != NULL)
 	{
 		printf("%d\n", h->n);
