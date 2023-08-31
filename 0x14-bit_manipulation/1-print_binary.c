@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 	int num_bits = sizeof(unsigned long int) * 8;
 	int i;
 
-	for (i = num_bits -1; i >=0; i--)
+	for (i = num_bits - 1; i >= 0; i--)
 	{
 		unsigned long int mask = 1UL << i;
 
