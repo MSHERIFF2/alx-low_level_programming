@@ -8,13 +8,13 @@
  */
 void print_binary(unsigned long int n)
 {
-	int num_bits = sizeof(unsigned long int) * 8;
+	int num_bits = sizeof(unsigned long int) * 4;
 	int i;
 	int leading_zeros = 1;
 
 	if (n == 0)
 	{
-		printf("0\n");
+		_putchar('0');
 		return;
 	}
 	for (i = num_bits - 1; i >= 0; i--)
@@ -24,12 +24,11 @@ void print_binary(unsigned long int n)
 		if (n & mask)
 		{
 			leading_zeros = 0;
-			printf("1");
+			_putchar('1');
 		}
 		else if (!leading_zeros)
 		{
-			printf("0");
+			_putchar('0');
 		}
 	}
-	printf("\n");
 }
