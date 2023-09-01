@@ -8,7 +8,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int num_bits = sizeof(unsigned long int) * 4;
+	int num_bits = sizeof(unsigned long int) * 8;
 	int i;
 	int leading_zeros = 1;
 
@@ -27,8 +27,6 @@ void print_binary(unsigned long int n)
 			_putchar('1');
 		}
 		else if (!leading_zeros)
-		{
 			_putchar('0');
-		}
 	}
 }
