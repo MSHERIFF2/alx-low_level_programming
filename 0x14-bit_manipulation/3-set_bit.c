@@ -13,11 +13,6 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	if (index >= 64)
 		return (-1);
-	if (n & mask)
-	{
-		_putchar(1);
-		return (1);
-	}
-	else
-		return (0);
+	*n |= mask;
+	return (1);
 }
