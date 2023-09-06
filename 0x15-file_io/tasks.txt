@@ -66,3 +66,8 @@ You are allowed to have as many functions as you want in your source file
 You are allowed to use printf
 
 
+open
+close
+read
+write
+dprintf
